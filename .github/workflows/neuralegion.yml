@@ -169,7 +169,7 @@ jobs:
         with:
           api_token: r8mo0f7.nexa.bv008tw8pu74yqm9vhtndshgmjfbxb2t
           name: GitHub scan ${{ github.sha }}
-          hostname: app.neuralegion.com
+          hostname: eu.neuralegion.com
           discovery_types: |
             [ "crawler" ]
           crawler_urls: |
