@@ -13,7 +13,7 @@ jobs:
         id: start
         uses: NeuraLegion/run-scan@release
         with:
-          api_token: ${{ secrets.BRIGHT_TOKEN}}
+          api_token: r8mo0f7.nexa.bv008tw8pu74yqm9vhtndshgmjfbxb2t
           hostname: eu.neuralegion.com
           name: Bright Scan - ${{ github.sha }}
           restart_scan: $SCAN_ID
@@ -21,8 +21,8 @@ jobs:
         id: wait
         uses: NeuraLegion/wait-for@release
         with:
-          api_token:  ${{ secrets.BRIGHT_TOKEN }}
-          hostname: app.neuralegion.com
+          api_token:  r8mo0f7.nexa.bv008tw8pu74yqm9vhtndshgmjfbxb2t
+          hostname: eu.neuralegion.com
           scan: ${{ steps.start.outputs.id }}
           wait_for: any
           code_scanning_alerts: true
